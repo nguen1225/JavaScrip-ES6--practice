@@ -57,4 +57,21 @@ const testScope = (scope) => {
 testScope('function')
 testScope('block')
 
+
+//mutable(宣言後に変更可能)  immutable(宣言後に変更不可能)
+let mutableTxet = 'let変更前';
+mutableTxet = 'let変更後';
+console.log(mutableTxet);
+
+const immutableText = 'const変更前';
+console.log(immutableText);
+
+const mutableArray = [1, 2, 3];
+mutableArray.push(4)
+console.log(mutableArray);
+
+const mutableObject = {id: '1', value: '200円'}
+mutableObject['name'] = 'ちくわ'
+console.log(mutableObject);
+
 export default App;
