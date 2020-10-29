@@ -74,4 +74,35 @@ const mutableObject = {id: '1', value: '200円'}
 mutableObject['name'] = 'ちくわ'
 console.log(mutableObject);
 
+
+//アロー関数
+function nameFunc(message) {
+	console.log(message)
+}
+nameFunc('これは名前付き関数です。')
+
+const arrowFunc = (message) => {
+	console.log(message)
+}
+arrowFunc('これはアロー関数です。')
+
+const oenLineArroowFunc = (message) => console.log(message);
+oenLineArroowFunc('これは一行で書いたアロー関数です。')
+
+const uers = {
+	name: 'mizuta'
+}
+const getUsername = (userId) => uers[userId];
+const uername = getUsername('name')
+console.log(uername)
+
+//上はreturnの省略系
+const uers2 = {
+	name2: 'アシタカ'
+}
+const getUsername2 = (userId) => {
+	return uers2[userId]
+}
+const uername2 = getUsername2('name2')
+console.log(uername2)
 export default App;
