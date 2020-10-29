@@ -42,4 +42,19 @@ class Counter extends Component
 	}
 }
 
+
+//varとletの違い
+const testScope = (scope) => {
+	if (scope === 'function') {
+		var functionScopen = "関数スコープ内ならどこでも参照可能です。"
+	} else if (scope === 'block') {
+		let blockScope = 'ブロックスコープ以内でしか参照できません。'
+		console.log(blockScope)
+	}
+	console.log(functionScopen)
+}
+
+testScope('function')
+testScope('block')
+
 export default App;
