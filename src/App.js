@@ -105,4 +105,10 @@ const getUsername2 = (userId) => {
 }
 const uername2 = getUsername2('name2')
 console.log(uername2)
+
+
+//map() 新しい配列を作る。
+const array = [1, 2, 4, 8];
+const resultArray = array.map(x => x * 2)
+console.log(resultArray)
 export default App;
