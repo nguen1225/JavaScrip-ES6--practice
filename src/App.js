@@ -111,4 +111,18 @@ console.log(uername2)
 const array = [1, 2, 4, 8];
 const resultArray = array.map(x => x * 2)
 console.log(resultArray)
+
+const object = {
+	"りんご": {text: "赤い"},
+	"バナナ": {text: "黄色い"},
+	"アボカド": {text: "黒い"}
+};
+
+const objectToArray = Object.keys(object).map(key => {
+	const value = object[key]
+	value['id'] = key
+	console.log(value)
+	return value
+});
+console.log(objectToArray)
 export default App;
