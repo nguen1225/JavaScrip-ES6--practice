@@ -139,7 +139,16 @@ const result = objectArray.filter(object => {
 console.log(result[0])
 
 
-
+//findIndex() 要素の何番目かを知る
+const objectArray2 = [
+	{ id: "1", text: "1番目"},
+	{ id: "2", text: "2番目"},
+	{ id: "3", text: "3番目"}
+];
+const index = objectArray2.findIndex(object => {
+	return object.id === '1'
+})
+console.log(index, objectArray[index])
 
 
 
