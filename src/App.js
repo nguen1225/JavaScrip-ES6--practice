@@ -125,4 +125,52 @@ const objectToArray = Object.keys(object).map(key => {
 	return value
 });
 console.log(objectToArray)
+
+
+//filter() 条件に合う要素を抽出
+const objectArray = [
+	{ id: "1", text: "1番目"},
+	{ id: "2", text: "2番目"},
+	{ id: "3", text: "3番目"}
+];
+const result = objectArray.filter(object => {
+	return object.id === '1'
+})
+console.log(result[0])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 export default App;
